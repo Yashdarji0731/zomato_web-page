@@ -1,0 +1,162 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header styling */
+header {
+    background-color: #ff4b5c; /* Red theme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Main section styling */
+main {
+    background-color: #f5f5f5; /* Light grey background for main content */
+    padding-bottom: 40px;
+}
+
+/* First section */
+main section:first-child {
+    background: url('/img/bg.png') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+main section:first-child img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+main section:first-child p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main section:first-child input {
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 60%;
+    max-width: 500px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+main section:first-child input::placeholder {
+    color: #999;
+}
+
+main section:first-child input:focus {
+    outline: none;
+    border-color: #ff4b5c;
+    box-shadow: 0 0 8px rgba(255, 75, 92, 0.5);
+}
+
+/* Second section - Food delivery information */
+main section:nth-child(2) {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+}
+
+main section:nth-child(2) h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4b5c;
+    margin-bottom: 20px;
+}
+
+main section:nth-child(2) p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+main section:nth-child(2) .features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+main section:nth-child(2) .features div {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main section:nth-child(2) .features div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+main section:nth-child(2) .features div h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+main section:nth-child(2) .features div p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
